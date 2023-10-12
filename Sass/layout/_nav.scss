@@ -1,8 +1,8 @@
 nav{
-        display: inline-block;
-        background-color:  #fef4f4;
-        display: flex;
-        justify-content: center;
+    display: inline-block;
+    background-color:  #fef4f4;
+    display: flex;
+    justify-content: center;
     
     @media (max-width: 576px) {
         #SmallScreenMenu{
@@ -53,16 +53,11 @@ nav{
         font-size: 19px;
         font-family:"Roboto",sans-serif;
     }
-
+   
     .btn-outline-success{
         color: white;
-        font-size: 19px;
         background-color: red;
         border-color: red;
-        &:hover{
-            border-color: white;
-            border-width: 3px;
-        }
     }
     
     a{
@@ -72,7 +67,5 @@ nav{
         }
      
     }
-
-
-    
+   
 }
