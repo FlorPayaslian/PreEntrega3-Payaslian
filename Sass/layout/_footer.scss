@@ -3,6 +3,14 @@ footer{
     grid-template-columns: 20% 40% 40%;
     grid-template-rows: 25% 55% 20%;
     
+    .referencia{ 
+        display: inline-block;
+        border: 2px solid #CCCCCC;
+        border-radius: 100%;
+        margin: 5px;
+        transition: all 0.8s ease;
+    }
+    
     #iconoFooter{
         grid-column: 1;
         grid-row: 1;

@@ -1,5 +1,4 @@
 nav{
-    display: inline-block;
     background-color:  #fef4f4;
     display: flex;
     justify-content: center;
@@ -10,6 +9,9 @@ nav{
             justify-content: center;
         }
         #BigScreenMenu{
+            display: none;
+        }
+        #botonDelNav{
             display: none;
         }
     }
@@ -32,9 +34,9 @@ nav{
         }
         #BigScreenMenu{
             display: flex;
-        }      
+            justify-content: center;            
+        }
     }
-    
     .navbar-nav{
         display: flex;
         flex-direction: row;
@@ -43,7 +45,7 @@ nav{
     
     .d-flex{
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
     .dropdown-toggle{
         font-size: 19px;
@@ -53,19 +55,25 @@ nav{
         font-size: 19px;
         font-family:"Roboto",sans-serif;
     }
-   
+
     .btn-outline-success{
-        color: white;
         background-color: red;
         border-color: red;
+
+        color: white;
+        &:hover{
+            background-color: white;
+            border-color: red;
+            color: red;
+            border-width: 3px;
+        }
     }
-    
+
     a{
         color: gray;
         &:hover{
             color: red;
-        }
-     
+        }    
     }
    
 }
