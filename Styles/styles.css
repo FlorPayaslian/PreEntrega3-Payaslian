@@ -1,0 +1,342 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#grillaCategorias{
+   display: grid;
+   grid-template-areas:
+    "header"
+    "nav"
+    "body"
+    "footer";
+}
+
+header{
+    background-color:rgb(253, 253, 152);
+}
+#icono{
+    height: 3.5em;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    background-color: rgb(253, 253, 152);
+}
+
+.carousel{
+    display: block;
+    box-sizing: border-box;
+    background-color: rgba(245, 245, 245, 0.281);
+    padding-bottom: 1.5em;
+    padding-top: 3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+.carousel.inner{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.carousel-item{
+    padding: 2em;
+}
+h2{
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+
+h3{
+    display: inline-block;
+    box-sizing: border-box;
+    margin-left: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(245, 245, 245, 0.140);
+}
+
+.card {
+    box-sizing: border-box;
+    width: calc(100%/3);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    align-items: center;
+}
+@media (max-width: 1020px) {
+    .card{
+        display: flex;
+        justify-content: center;
+        margin: 1em;
+    }
+    
+}
+
+.card img{
+    display: flex;
+    height:13em;
+    width: 60%;
+    
+}
+
+.carousel-control-prev{
+    box-sizing: border-box;
+    margin-left: 1em;
+    background-color: red;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next{
+    box-sizing: border-box;
+    margin-right: 1em;
+    background-color: red;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btn{
+    background-color: red;
+    border-color: red;
+}
+
+
+/* Estilo relacionado a la Ubicación */
+.Ubicacion {
+    display:inline-block;
+    margin-top: 10px;
+}
+
+#mapita {
+    margin: 40px;
+    position: relative;
+    bottom: 5px;
+}
+input[type=button], input[type=submit] {
+    border: none;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.form-label{
+    font-weight: bold;
+    
+}
+.datosDeContacto{
+    display: inline-block;
+    margin-left: 35px;
+    position: relative;
+    bottom: 100px;
+}
+
+.dato{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+/* Estilo relacionado a la pestaña Nosotros */
+.nosotros{
+    margin: 30px;
+    text-align: justify;
+    line-height: 1.4;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#sobreNosotros{
+    margin-left: 25px;
+}
+
+#quienesSomos{
+    margin-left: 25px;
+}
+/* Estilo relaciondo al bottom de Newsletter */
+.newsletter{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 255, 0.822);
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-color: black;
+    border: 50px;
+}
+#newsletter{
+    font-family: Playfair Display;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+ #newsletterForm{
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 50;
+ }
+#enviar{
+    font-size: 25px;
+    background-color: rgb(236, 28, 28);
+    border-radius: 15px;
+    height: 40px;
+    width: 500px;
+    padding-top: 5px;
+    color: wheat;
+
+}
+
+#newsletterMail{
+    width:500px;
+    height: 40px;
+    border-color: rgb(165, 155, 155);
+}
+
+/* Estilo relacionado a cada una de los títulos de la página */
+@media (min-width: 800px) {
+    #grillaBody{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-areas: 
+        "aside Libro";
+        column-gap: 3em;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        grid-template-rows: 100%;
+        grid-template-columns: 25% 70%;
+
+    }
+    section#Libro{
+        box-sizing: border-box;
+        display: grid;
+        background-color: rgba(245, 245, 245, 0.281);
+        grid-template-areas:
+        "Tiulo"
+        "portadaLibro"
+        "Reseña"
+        "Autor"
+        "descarga";
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        row-gap: 1.5em;    
+    }
+    .resumenObra{
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: justify;
+        line-height: 1.4;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+}
+@media (max-width: 576px) {
+    #grillaBody{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-areas: 
+        "aside" 
+        "Libro";
+        row-gap: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        grid-template-rows: 100%;
+        grid-template-columns: 100%;
+
+    }
+
+    section#Libro{
+        display: grid;
+        background-color: rgba(245, 245, 245, 0.281);
+        grid-template-areas:
+        "Tiulo"
+        "portadaLibro"
+        "Reseña"
+        "Autor"
+        "descarga";
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-bottom: 2em;
+        grid-template-columns: 100%;
+        row-gap:2em;
+        grid-template-rows: 5%;
+
+    }  
+
+    .resumenObra{
+        overflow: auto;
+        text-align: justify;
+        padding: 0.5em;
+    }
+    .Autor{
+        overflow: auto;
+        text-align: justify;
+        padding: 0.5em;
+    }
+}
+
+aside{ 
+    box-sizing: border-box;
+    background-color: rgba(245, 245, 245, 0.281);
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.portadaLibro{
+    display: flex;
+    justify-content: center;
+    height:20em;
+    width: auto;
+}
+#SeccionesPublicacion{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+}
+#descarga{
+    text-align: center;
+}
+/* Estilo relacionado al footer */
+/* .footer{
+
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 25% auto;
+    background-color: rgb(253, 253, 152);
+    height: 80px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+#leyendaFooter {
+    text-align: center;
+}
+ */
+

@@ -1,0 +1,82 @@
+nav{
+    nav{
+        display: inline-block;
+        background-color:  #fef4f4;
+        display: flex;
+        justify-content: center;
+    }
+    
+    @media (max-width: 576px) {
+        #SmallScreenMenu{
+            display: flex;
+            justify-content: center;
+        }
+        #BigScreenMenu{
+            display: none;
+        }
+    }
+    
+    @media (min-width: 577px) and (max-width: 830px) {
+        #SmallScreenMenu{
+            display: none;
+        }
+        #formDeBusqueda{
+            display: none;
+        }
+        #botonDelNav{
+            display: none;
+        }
+    }
+    
+    @media (min-width: 831px) {
+        #SmallScreenMenu{
+            display: none;
+        }
+        #BigScreenMenu{
+            display: flex;
+        }      
+    }
+    
+    .navbar-nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .d-flex{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .dropdown-toggle{
+        font-size: 19px;
+        font-family:"Roboto", sans-serif;
+    }
+    .nav-link {
+        font-size: 19px;
+        font-family:"Roboto",sans-serif;
+    }
+    #botondelnav{
+        background-color: red;
+        border-color: red;
+    }
+    
+    .btn-outline-success{
+        font-size: 19px;
+        color:white
+    }
+    
+    .btn-outline-success:hover{
+        background-color: gray;
+        border-color: gray;
+    }
+    
+    a:hover{
+        color: red;
+    }
+    
+    a{
+        color: gray;
+     
+    }
+    
+}
