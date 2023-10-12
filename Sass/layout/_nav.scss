@@ -1,10 +1,8 @@
 nav{
-    nav{
         display: inline-block;
         background-color:  #fef4f4;
         display: flex;
         justify-content: center;
-    }
     
     @media (max-width: 576px) {
         #SmallScreenMenu{
@@ -55,28 +53,26 @@ nav{
         font-size: 19px;
         font-family:"Roboto",sans-serif;
     }
-    #botondelnav{
+
+    .btn-outline-success{
+        color: white;
+        font-size: 19px;
         background-color: red;
         border-color: red;
-    }
-    
-    .btn-outline-success{
-        font-size: 19px;
-        color:white
-    }
-    
-    .btn-outline-success:hover{
-        background-color: gray;
-        border-color: gray;
-    }
-    
-    a:hover{
-        color: red;
+        &:hover{
+            border-color: white;
+            border-width: 3px;
+        }
     }
     
     a{
         color: gray;
+        &:hover{
+            color: red;
+        }
      
     }
+
+
     
 }
