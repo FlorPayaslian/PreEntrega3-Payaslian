@@ -6,15 +6,16 @@
     <title>Un Mundo Feliz</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="icon" href="Imagenes/Iconos/favicon - copia.jpg" type="FORMATO-FAV" sizes="15px">
 </head>
+<body>
 <div class="grillaPaginaPublicacion">
     <header>
-        <img id="icono" src="./Imagenes/Iconos/ABCbook.jpg">
+        <img id="icono" src="./Imagenes/Iconos/ABCbook.jpg" alt="IconoPagina">
     </header>
 <!-- Inserto Barra de Navegación -->
     <nav>
@@ -72,7 +73,6 @@
         </ul>
     </div>
     </nav>
-    <body>
         <div id="grillaBody">
             <aside>
                 <h5>Mas sobre este título</h5>
@@ -85,7 +85,7 @@
             <section id="Libro">
                 <h3 class="TituloLibro">Un Mundo Feliz</h3>
                 <div class="portadaLibro">
-                    <img src="./Imagenes/Libros/CienciaFiccionI.jpg">
+                    <img src="./Imagenes/Libros/CienciaFiccionI.jpg" alt="Portada Un Mundo Feliz">
                 </div>
                 <div class="resumenObra">
                     <h3 id="resumen">Resumen</h3>
@@ -95,13 +95,9 @@
                 </div>
                 <div class="Autor">
                     <h3 id="autor">Aldous Huxley</h3>
-                    <p>Aldous Huxley (1894-1963) fue un destacado escritor y filósofo inglés, conocido por sus novelas y ensayos que exploraron temas de distopía, tecnología y la naturaleza humana. Nacido en una prominente familia intelectual, Huxley estuvo expuesto a la literatura e ideas desde temprana edad. Sufrió de problemas de visión a lo largo de su vida, lo que influyó en su perspectiva del mundo.
-
-                        Las primeras obras de Huxley, como "Crome Yellow" y "Point Counter Point," mostraron su ingenio y estilo satírico, pero fue su novela de 1932, "Un Mundo Feliz," la que lo catapultó a la fama literaria. Esta obra maestra distópica pintó un sombrío panorama de una sociedad futura controlada por la tecnología y la conformidad, planteando profundas preguntas sobre la individualidad y la libertad.
-                        
+                    <p id="bioAutor"> Aldous Huxley (1894-1963) fue un destacado escritor y filósofo inglés, conocido por sus novelas y ensayos que exploraron temas de distopía, tecnología y la naturaleza humana. Nacido en una prominente familia intelectual, Huxley estuvo expuesto a la literatura e ideas desde temprana edad. Sufrió de problemas de visión a lo largo de su vida, lo que influyó en su perspectiva del mundo. Las primeras obras de Huxley, como "Crome Yellow" y "Point Counter Point," mostraron su ingenio y estilo satírico, pero fue su novela de 1932, "Un Mundo Feliz," la que lo catapultó a la fama literaria. Esta obra maestra distópica pintó un sombrío panorama de una sociedad futura controlada por la tecnología y la conformidad, planteando profundas preguntas sobre la individualidad y la libertad. 
                         A lo largo de su carrera, Huxley siguió produciendo obras influyentes, como "Las Puertas de la Percepción," donde narró sus experiencias con sustancias psicoactivas y exploró la naturaleza de la conciencia. Sus novelas posteriores, como "Isla" y "Ciego en Gaza," ahondaron en temas de espiritualidad y visiones utópicas.
-                        
-                        La escritura de Aldous Huxley continúa inspirando el pensamiento crítico y el discurso filosófico, lo que lo convierte en una figura respetada en la literatura del siglo XX. Su legado perdura a través de su exploración de la condición humana y su compromiso inquebrantable de desafiar las normas sociales y el statu quo.</p>
+                        La escritura de Aldous Huxley continúa inspirando el pensamiento crítico y el discurso filosófico, lo que lo convierte en una figura respetada en la literatura del siglo XX. Su legado perdura a través de su exploración de la condición humana y su compromiso inquebrantable de desafiar las normas sociales y el statu quo. </p>
                 </div>
                 <div id="descarga">
                     <h3>Descarga la obra</h3>
@@ -111,25 +107,58 @@
             
         </div>
     
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    </body>
-    <footer>
-        <div class="footer">
-            <img src="./Imagenes/Iconos/ABCbook.jpg">
-            <a href= "./Index.html">Home</a>
-            <a href= "./Categorias.html">Categorias</a>
-            <a href= "./Nosotros.html">Acerca de nosotros</a>
-            <a href= "./Contact.html">Contacto</a>
+
+        <div class="newsletter">
+            <p id="newsletter">Suscribete a nuestro newsletter</p>
+            <form id="newsletterForm"; method="get">
+                <input type="email" name="mail" id="newsletterMail" placeholder="Escribe tu dirección de mail"></br>
+                <input type="submit" id="enviar" name="enviar" value="Enviar"/>
+            </form>
         </div>
-        <p id="leyendaFooter">Esto es una página de pre-entrega</p>
-    </footer>
+    
+        <footer>
+            <div id="BigScreenFooter">
+              <div id="iconoFooter">
+                <img src="./Imagenes/Iconos/ABCbook.jpg" alt="IconoPagina">
+              </div>
+              <div id="iconoContacto">
+                <i class="fa-brands fa-instagram fa-2x"></i> 
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <i class="fa-brands fa-twitter fa-2x"></i>
+              </div>
+              <div id="LinksFooter">
+                  <a href= "./Index.html">Home</a>
+                  <a href= "./Nosotros.html">Nosotros</a>
+                  <a href= "./Contact.html">Contacto</a>
+              </div>
+              <div id="categoriasFooter">
+                <a href= "./Categorias.html">Categorias</a>
+                <a href="./CienciaFiccion.html">Ciencia Ficción</a>
+                <a href="./Romanticos.html">Románticos</a>
+                <a href="./Infantiles.html">Infantiles</a>            
+              </div>
+            </div>
+            <div id="SmallScreenFooter">
+              <div id="iconoFooter">
+                <img src="./Imagenes/Iconos/ABCbook.jpg" alt="IconoPagina">
+              </div>
+              <div id="iconoContacto">
+                <i class="fa-brands fa-instagram fa-2x"></i> 
+                <i class="fa-brands fa-facebook fa-2x"></i>
+                <i class="fa-brands fa-twitter fa-2x"></i>
+              </div>
+            </div>
+            <p id="leyendaFooter">Esto es una página de pre-entrega</p>
+          </footer>
 </div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+crossorigin="anonymous"></script>
+</body>
 </html>

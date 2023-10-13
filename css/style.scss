@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -101,25 +100,17 @@ nav a:hover {
   color: red;
 }
 
-h2 {
-  display: block;
-  color: black;
-  text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  box-sizing: border-box;
-  margin-top: 1em;
-  margin-left: 1em;
-}
-
 .carrousel, .slide {
   display: block;
   box-sizing: border-box;
-  background-color: rgba(245, 245, 245, 0.12);
+  background-color: rgba(245, 245, 245, 0.281);
+  padding-bottom: 1.5em;
+  padding-top: 2em;
   padding-left: 2em;
   padding-right: 2em;
   margin-left: 0.5em;
   margin-right: 0.5em;
-  margin-top: 0.5em;
+  margin-top: 2em;
   margin-bottom: 3em;
 }
 .carrousel .carousel.inner, .slide .carousel.inner {
@@ -130,6 +121,14 @@ h2 {
 }
 .carrousel .carousel-item, .slide .carousel-item {
   padding: 2em;
+}
+.carrousel h2, .slide h2 {
+  display: block;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  margin-top: 1em;
+  margin-left: 1em;
 }
 .carrousel h3, .slide h3 {
   display: inline-block;
@@ -159,9 +158,6 @@ h2 {
   display: flex;
   height: 13em;
   width: 60%;
-  margin-top: 0.25em;
-  border: 0.3em;
-  border-color: light gray;
 }
 .carrousel .card-title, .slide .card-title {
   text-overflow: ellipsis;
@@ -290,7 +286,7 @@ footer #leyendaFooter {
 
 #newsletter {
   font-family: Playfair Display;
-  font-size: 2.5em;
+  font-size: 3em;
   color: white;
   text-align: center;
 }
@@ -299,12 +295,12 @@ footer #leyendaFooter {
   box-sizing: border-box;
   text-align: center;
   margin-top: 15px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 50;
 }
 
 #enviar {
-  font-size: 20px;
+  font-size: 25px;
   background-color: rgb(236, 28, 28);
   border-radius: 15px;
   height: 40px;
@@ -371,132 +367,4 @@ footer #leyendaFooter {
   font-size: 17px;
 }
 
-/* Estilo relacionado a cada una de los títulos de la página */
-@media (min-width: 800px) {
-  #grillaBody {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-areas: "aside Libro";
-    column-gap: 3em;
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    grid-template-rows: 100%;
-    grid-template-columns: 25% 70%;
-  }
-  section#Libro {
-    box-sizing: border-box;
-    display: grid;
-    background-color: rgba(245, 245, 245, 0.281);
-    grid-template-areas: "Tiulo" "portadaLibro" "Reseña" "Autor" "descarga";
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    row-gap: 1.5em;
-  }
-  .resumenObra {
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: justify;
-    line-height: 1.4;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-  .Autor {
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: justify;
-    line-height: 1.4;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  }
-}
-@media (max-width: 576px) {
-  #grillaBody {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-areas: "aside" "Libro";
-    row-gap: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    grid-template-rows: 100%;
-    grid-template-columns: 100%;
-  }
-  section#Libro {
-    display: grid;
-    background-color: rgba(245, 245, 245, 0.281);
-    grid-template-areas: "Tiulo" "portadaLibro" "Reseña" "Autor" "descarga";
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    margin-bottom: 2em;
-    grid-template-columns: 100%;
-    row-gap: 2em;
-    grid-template-rows: 5%;
-  }
-  .resumenObra {
-    overflow: auto;
-    text-align: justify;
-    padding: 0.5em;
-  }
-  .Autor {
-    overflow: auto;
-    text-align: justify;
-    padding: 0.5em;
-  }
-}
-aside {
-  grid-area: aside;
-  box-sizing: border-box;
-  position: sticky;
-  background-color: rgba(245, 245, 245, 0.12);
-  padding-left: 3em;
-  padding-right: 3em;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-aside a {
-  text-decoration: none;
-  color: gray;
-  font-size: 1em;
-  font-family: "Roboto", sans-serif;
-}
-aside a:hover {
-  color: red;
-  text-decoration: none;
-}
-aside ul {
-  list-style: none;
-}
-
-.portadaLibro {
-  display: flex;
-  justify-content: center;
-  height: 20em;
-  width: auto;
-}
-
-#SeccionesPublicacion {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.2em;
-  text-align: left;
-}
-
-#descarga {
-  text-align: center;
-}
-#descarga a {
-  text-decoration: none;
-  color: gray;
-  font-size: 1.2em;
-  font-family: "Roboto", sans-serif;
-}
-#descarga a:hover {
-  color: red;
-  text-decoration: none;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */

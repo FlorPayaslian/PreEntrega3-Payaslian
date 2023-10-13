@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="Imagenes/Iconos/favicon - copia.jpg" type="FORMATO-FAV" sizes="15px">
-</head>
-<header>
-    <img src="./Imagenes/Iconos/ABCbook.jpg">
-</header>
-<nav>
-    <div class = "barraDeNavegacion">
-        <a href= "./Index.html">Home</a>
-        <a href= "./Categorias.html">Categorias</a>
-        <a href= "./Nosotros.html">Nosotros</a>
-        <a href= "./Contact.html">Contacto</a>
-    </div>
-</nav>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nosotros</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="icon" href="Imagenes/Iconos/favicon - copia.jpg" type="FORMATO-FAV" sizes="15px">
+        <script src="https://kit.fontawesome.com/3150561218.js" crossorigin="anonymous"></script>
+    </head>
 <body>
+      <header>
+          <img id="icono" src="./Imagenes/Iconos/ABCbook.jpg">
+      </header>
+    <!-- Inserto Barra de Navegación -->
+      <nav>
+        <div class="navbar navbar-expand-sm" id="BigScreenMenu">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="menuCategorias" class="dropdown-toggle" data-toggle="dropdown" href="./Categorias.html">Categorias
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="nav-link"><a href="#">Ciencia Ficción</a></li>
+                <li class="nav-link"><a href="#">Infantiles</a></li>
+                <li class="nav-link"><a href="#">Historia</a></li>
+                <li class="nav-link"><a href="#">Románticos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact.html">Contacto</a>
+            </li>
+          </ul>
+          <!-- Form de busqueda -->
+          <div class="formDeBusqueda">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" id="formDeBusqueda" type="search" placeholder="Buscar" aria-label="Search">
+              <button id="botonDelNav" class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+    
+        </div>
+        <div class="navbar navbar-expand-sm" id="SmallScreenMenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a id="menuCategorias" class="dropdown-toggle" data-toggle="dropdown" href="./Categorias.html">Menu
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#">Categorias</a></li>
+                <li class="nav-link"><a href="#">Contacto</a></li>
+                <li class="nav-link"><a href="#">Nosotros</a></li>
+                <li class="nav-link"><div class="formDeBusqueda">
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" id="formDeBusqueda" type="search" placeholder="Buscar" aria-label="Search">
+                    <button id="botonDelNav" class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    
+      </nav>
+  <main>
     <div class ="nosotros">
     <h2>Sobre ABCBooks.com</h2>
     <p id="sobreNosotros">Bienvenidos a nuestro blog de literatura! Este es tu destino para explorar el apasionante mundo de las letras y la imaginación. Aquí, compartiremos reseñas de diversos libros, desde clásicos eternos hasta las últimas novedades literarias.
@@ -42,15 +96,39 @@
             <input type="submit" id="enviar" name="enviar" value="Enviar"/>
         </form>
     </div>
+  </main>
+    <footer>
+        <div id="BigScreenFooter">
+          <div id="iconoFooter">
+            <img src="./Imagenes/Iconos/ABCbook.jpg">
+          </div>
+          <div id="iconoContacto">
+            <i class="fa-brands fa-instagram fa-2x"></i> 
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+          </div>
+          <div id="LinksFooter">
+              <a href= "./Index.html">Home</a>
+              <a href= "./Nosotros.html">Nosotros</a>
+              <a href= "./Contact.html">Contacto</a>
+          </div>
+          <div id="categoriasFooter">
+            <a href= "./Categorias.html">Categorias</a>
+            <a href="./CienciaFiccion.html">Ciencia Ficción</a>
+            <a href="./Romanticos.html">Románticos</a>
+            <a href="./Infantiles.html">Infantiles</a>            
+          </div>
+        </div>
+        <div id="SmallScreenFooter">
+          <div id="iconoFooter">
+            <img src="./Imagenes/Iconos/ABCbook.jpg">
+          </div>
+          <div id="iconoContacto">
+            <i class="fa-brands fa-instagram fa-2x"></i> 
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+          </div>
+        </div>
+        <p id="leyendaFooter">Esto es una página de pre-entrega</p>
+      </footer>
 </body>
-<footer>
-    <div class="footer">
-        <img src="./Imagenes/Iconos/ABCbook.jpg">
-        <a href= "./Index.html">Home</a>
-        <a href= "./Categorias.html">Categorias</a>
-        <a href= "./Nosotros.html">Acerca de nosotros</a>
-        <a href= "./Contact.html">Contacto</a>
-    </div>
-    <p id="leyendaFooter">Esto es una página de pre-entrega</p>
-</footer>
-

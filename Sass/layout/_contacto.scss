@@ -9,6 +9,37 @@
     bottom: 5px;
 }
 
+#formContacto{
+    display: grid;
+    padding-left: 4em;
+    padding-right: 4em;
+    grid-template-rows: 20% 20% auto;
+    column-gap: 2em;
+    row-gap: 1em;
+    #NombreApellido{
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 2em;
+        #formNombre{
+            grid-column: 1;
+            grid-row: 1;
+        }
+        #formApellido{
+            grid-column: 2;
+            grid-row: 1;
+        }
+    }
+
+    #formEmail{
+        grid-row: 2;
+    }
+    #formComentario{
+        grid-row: 3;
+    }
+}
+
+
+
 .datosDeContacto{
     display: inline-block;
     margin-left: 35px;

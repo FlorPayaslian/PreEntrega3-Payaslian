@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="icon" href="Imagenes/Iconos/favicon - copia.jpg" type="FORMATO-FAV" sizes="15px">
 </head>
-<body>>
+<body>
 <header>
     <img id="icono" src="./Imagenes/Iconos/ABCbook.jpg">
 </header>
@@ -88,34 +88,24 @@
     </div>
     <div>
         <h2>Contáctanos</h2>
-        <form>
-            <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <form id="formContacto">
+            <div class="form-group" id="NombreApellido">
+              <div id="formNombre">
+                <label for="exampleFormControlInput1">Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre">
+              </div>
+              <div id="formApellido">
+                <label for="exampleFormControlInput1">Apellido</label>
+                <input type="text" class="form-control"  placeholder="Apellido">
+              </div>
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect1">Example select</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+            <div class="form-group" id="formEmail">
+              <label for="exampleFormControlInput1">Correo electrónico</label>
+              <input type="email" class="form-control" placeholder="name@example.com">
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlSelect2">Example multiple select</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <div class="form-group" id="formComentario">
+              <label for="exampleFormControlTextarea1">Dejanos un mensaje</label>
+              <textarea class="form-control grid-item" rows="3"></textarea>
             </div>
           </form>
     </div>
@@ -125,19 +115,43 @@
             <input type="email" name="mail" id="newsletterMail" placeholder="Escribe tu dirección de mail"></br>
             <input type="submit" id="enviar" name="enviar" value="Enviar"/>
         </form>
-    </div>
+      </div>
     </main>
 
-<footer>
-    <div class="footer">
-        <img src="./Imagenes/Iconos/ABCbook.jpg">
-        <a href= "./Index.html">Home</a>
-        <a href= "./Categorias.html">Categorias</a>
-        <a href= "./Nosotros.html">Acerca de nosotros</a>
-        <a href= "./Contact.html">Contacto</a>
-    </div>
-    <p id="leyendaFooter">Esto es una página de pre-entrega</p>
-</footer>
+    <footer>
+        <div id="BigScreenFooter">
+          <div id="iconoFooter">
+            <img src="./Imagenes/Iconos/ABCbook.jpg">
+          </div>
+          <div id="iconoContacto">
+            <i class="fa-brands fa-instagram fa-2x"></i> 
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+          </div>
+          <div id="LinksFooter">
+              <a href= "./Index.html">Home</a>
+              <a href= "./Nosotros.html">Nosotros</a>
+              <a href= "./Contact.html">Contacto</a>
+          </div>
+          <div id="categoriasFooter">
+            <a href= "./Categorias.html">Categorias</a>
+            <a href="./CienciaFiccion.html">Ciencia Ficción</a>
+            <a href="./Romanticos.html">Románticos</a>
+            <a href="./Infantiles.html">Infantiles</a>            
+          </div>
+        </div>
+        <div id="SmallScreenFooter">
+          <div id="iconoFooter">
+            <img src="./Imagenes/Iconos/ABCbook.jpg" alt="IconoPagina">
+          </div>
+          <div id="iconoContacto">
+            <i class="fa-brands fa-instagram fa-2x"></i> 
+            <i class="fa-brands fa-facebook fa-2x"></i>
+            <i class="fa-brands fa-twitter fa-2x"></i>
+          </div>
+        </div>
+        <p id="leyendaFooter">Esto es una página de pre-entrega</p>
+      </footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
