@@ -4,27 +4,62 @@
     #grillaBody{
         box-sizing: border-box;
         display: grid;
-        grid-template-areas: 
-        "aside Libro";
         column-gap: 3em;
         margin-left: 4em;
         margin-right: 4em;
         margin-top: 1em;
         margin-bottom: 1em;
         grid-template-rows: 100%;
-        grid-template-columns: 25% 70%;
+        grid-template-columns: 30% 70%;
 
     }
-    section#Libro{
+    #Libro{
+        box-sizing: border-box;
+        background-color: rgba(245, 245, 245, 0.281);
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        row-gap: 1.5em;    
+
+    }
+    .resumenObra{
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: justify;
+        line-height: 1.4;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .Autor{
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: justify;
+        line-height: 1.4;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+}
+@media (min-width: 577px) and (max-width: 799px) {
+    #grillaBody{
+        box-sizing: border-box;
+        display: grid;
+        column-gap: 3em;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        grid-template-rows: 100%;
+        grid-template-columns: 30% 70%;
+
+    }
+    aside{
+        max-height: fit-content;
+    }
+    #Libro{
         box-sizing: border-box;
         display: grid;
         background-color: rgba(245, 245, 245, 0.281);
-        grid-template-areas:
-        "Tiulo"
-        "portadaLibro"
-        "Reseña"
-        "Autor"
-        "descarga";
         padding-left: 2em;
         padding-right: 2em;
         padding-top: 1em;
@@ -46,43 +81,36 @@
         line-height: 1.4;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-    
+
 }
+
+//Diseño Mobile
 @media (max-width: 576px) {
+    aside{
+        height: min-content;
+    }
     #grillaBody{
         box-sizing: border-box;
         display: grid;
-        grid-template-areas: 
-        "aside" 
+        grid-template-areas:
+        "aside"
         "Libro";
-        row-gap: 2em;
         margin-left: 1em;
         margin-right: 1em;
         margin-top: 1em;
         margin-bottom: 1em;
-        grid-template-rows: 100%;
-        grid-template-columns: 100%;
-
     }
 
-    section#Libro{
-        display: grid;
+    #Libro{
         background-color: rgba(245, 245, 245, 0.281);
-        grid-template-areas:
-        "Tiulo"
-        "portadaLibro"
-        "Reseña"
-        "Autor"
-        "descarga";
+        display: grid;
         padding-left: 1em;
         padding-right: 1em;
         padding-top: 1em;
         padding-bottom: 1em;
+        margin-top: 2em;
         margin-bottom: 2em;
-        grid-template-columns: 100%;
-        row-gap:2em;
-        grid-template-rows: 5%;
-
+        row-gap: 1.4em;
     }  
 
     .resumenObra{
@@ -95,16 +123,15 @@
         text-align: justify;
         padding: 0.5em;
     }
-
+    aside{
+        text-align: center;
+    }
    
 }
 
 aside{ 
-    grid-area: aside;
     box-sizing: border-box;
-    position: sticky;
-    background-color: rgba(245, 245, 245, 0.120);
-    // background-color: rgba(245, 245, 245, 0.281);
+    background-color: rgba(245, 245, 245, 0.281);
     padding-left: 3em;
     padding-right: 3em;
     padding-top: 1em;
@@ -128,13 +155,16 @@ aside{
 .portadaLibro{
     display: flex;
     justify-content: center;
-    height:20em;
+    height: 20em;
     width: auto;
+}
+.TituloLibro, .resumen{
+    text-align: center;
 }
 #SeccionesPublicacion{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2em;
-    text-align: left;
+    text-align: center;
 }
 #descarga{
     a{
